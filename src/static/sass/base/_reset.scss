@@ -14,6 +14,8 @@ p,
 figure,
 picture {
   margin: 0;
+  padding:0;
+  font-family: 'Bellefair', serif;
 }
 
 
@@ -26,6 +28,7 @@ body{
 img,
 picture{
  max-width: 100%;
+ height: auto;
  display: block;
 }
 
