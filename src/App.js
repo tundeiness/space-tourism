@@ -11,7 +11,8 @@ const App = () => (
       <div className="col-1 border-red">1</div>
       <div className="col-1 border-red">1</div>
       <div className="col-1 border-red">1</div> */}
-      <div className="col-12 border-red">1</div>
+      <div className="col-11 border-red">1</div>
+      <div className="col-1 border-red">1</div>
       {/* <div className="col-6 border-red">1</div> */}
       {/* <div className="col-4 border-red">1</div> */}
 
