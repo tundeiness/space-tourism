@@ -1,0 +1,24 @@
+.pry-header{
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-between;
+
+  .mobile-nav-toggle{
+    display:none;
+  }
+
+  &__img-wrap{
+    border: 1px solid red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  
+  }
+
+  &__nav{
+     border: 1px solid red;
+    .pry-navigation{
+      display: flex;
+    }
+  }
+}
