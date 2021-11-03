@@ -15,8 +15,10 @@ const Header = () => {
 
   return (
     <header className="pry-header">
-      <div className="pry-header__img-wrap">
-        <img src={Logo} alt="space tourism logo" className="logo" />
+      <div className="pry-header__img-section border-red">
+        <div className="img-wrap">
+          <img src={Logo} alt="space tourism logo" className="logo" />
+        </div>
       </div>
       <button
         type="button"
