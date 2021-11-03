@@ -1,5 +1,5 @@
 
-$gap: 1rem;
+$gap: 1px;
 $clr-dark: #0b0d17;
 $clr-teal: #d0d6f9;
 $clr-white: #ffffff;
@@ -12,6 +12,7 @@ $fs-600: 2rem;
 $fs-700: 3.5rem;
 $fs-800: 6.25rem;
 $fs-900: 9.375rem;
+// --fs-900: clamp(5rem, 7vw + 1rem, 9.375rem);
 
 
 

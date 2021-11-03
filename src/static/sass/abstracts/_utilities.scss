@@ -10,6 +10,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  place-content: center;
+  // gap: $gap;
   // margin: calc(0.3vw + 1px) calc(0.3vw + 1px);
   // justify-content: space-between;
 }
@@ -24,7 +26,7 @@
     // width: calc(92% - 20px);
     //  margin: 0 calc(0.2vw + 2px);
      width: calc(100%  /  12 * 11);
-     margin-inline: auto;
+    //  margin-inline: auto;
 }
 .col-10 {
     // width: calc(84% - 20px);
@@ -82,7 +84,7 @@
     // width: calc(12% - 20px);
     //  width: calc((100% - 20px * 2) / 12);
     width: calc(100%  /  12);
-    margin-inline: auto;
+    // margin-inline: auto;
     // padding-inline: auto;
     //  margin-inline: 0.1rem;
     //  margin: 0 calc(0.04vw + 1px);
