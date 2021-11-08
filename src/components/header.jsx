@@ -95,7 +95,7 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-      <div className="sidebar">
+      {/* <div className="sidebar">
         <ul id="pry-navigation" className="pry-navigation">
           <li className={isActive === 'Home' ? 'active' : 'inactive'}>
             <a
@@ -152,7 +152,7 @@ const Header = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </>
   );
 };
