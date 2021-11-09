@@ -55,6 +55,7 @@
       
       li{
         list-style-type: none;
+        outline: 1px solid #fff;
           a{
             margin:0 1.5rem;
             text-decoration: none;
@@ -134,6 +135,7 @@
 @media screen and (max-width: 480px){
 
   .pry-header{
+    position: relative;
    
    .mobile-nav-toggle{
     display:block;
@@ -142,6 +144,11 @@
     background-position: center;
     background-color: transparent;
     width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    // margin-left:10rem
   }
 
    &__img-section{
@@ -190,18 +197,22 @@
 
        li{
         // list-style-type: none;
-        padding: 15px 0;
+        display: flex;
+        justify-content: start;
+        outline: 1px solid blue;
+        margin: 5px 0;
+        // padding: 10px 0;
 
           a{
             padding: 10px 15px;
-            // margin:0 1.5rem;
+            // margin:0;
             text-decoration: none;
             // border: 1px solid red;
             // padding: 1.7rem 0;
             font-family: $ff-sans-cond;
             text-transform: uppercase;
             letter-spacing: 3px;
-             color:black ;
+            color:black ;
             span{
               // padding-right: 8px;
               color:black ;
@@ -209,6 +220,32 @@
             }
           }
       }
+
+      li.active{
+        border-right: 1px solid red;
+        border-bottom: none;
+      }
+
+      li.active a,
+      li.active a:hover,
+      li.active a:focus{
+        border-bottom: none;
+      }
+
+      li.active a,
+      li.inactive a:hover,
+      li.active a:focus{
+        border-bottom: none;
+      }
+
+      li.inactive:hover{
+        // border-right: 1px solid rgb(255, 255, 255, 0.6);
+        // border-bottom: none;
+        border-right: 1px solid black;
+      }
+
+
+
     }
    }
 
