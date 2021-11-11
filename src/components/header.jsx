@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from 'static/assets/image/shared/logo.svg';
+import Sidebar from 'components/sideBar';
 // import 'static/sass/components/global.scss';
 
 const Header = () => {
@@ -12,6 +13,10 @@ const Header = () => {
 
   const handleClick = (link) => {
     setIsActive(link);
+  };
+
+  const handleSideBar = () => {
+    setIsSideBar(true);
   };
 
   return (
@@ -30,7 +35,7 @@ const Header = () => {
         </div>
         <button
           type="button"
-          className="mobile-nav-toggle"
+          className={isSideBar === false ? 'mobile-nav-toggle' : 'open-mobile'}
           aria-controls="primary-navigation"
         >
           <span className="sr-mobile" aria-expanded="false" />
@@ -95,6 +100,7 @@ const Header = () => {
           </ul>
         </nav>
       </header>
+      <Sidebar />
       {/* <div className="sidebar">
         <ul id="pry-navigation" className="pry-navigation">
           <li className={isActive === 'Home' ? 'active' : 'inactive'}>
