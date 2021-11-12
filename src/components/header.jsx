@@ -8,8 +8,6 @@ import useToggle from 'utils/toggle';
 const Header = () => {
   const [isActive, setIsActive] = useState('Home');
   const [isSideBar, setIsSideBar] = useToggle();
-  const [show, setShow] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = (link) => {
     setIsActive(link);
