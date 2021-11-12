@@ -96,7 +96,7 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-      {isSideBar ? '' : <Sidebar check={isSideBar} />}
+      {isSideBar ? '' : <Sidebar />}
     </>
   );
 };
