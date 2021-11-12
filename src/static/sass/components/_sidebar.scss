@@ -3,7 +3,6 @@
   .sidebar{
     display: flex;
     flex-direction: column;
-   
     position: fixed;
     right: 0;
     top:0;
@@ -68,6 +67,11 @@
 
 
     }
+  }
+
+
+  .close{
+    display: none;
   }
 
 

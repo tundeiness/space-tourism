@@ -1,13 +1,14 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from 'static/assets/image/shared/logo.svg';
 import Sidebar from 'components/sideBar';
+import useToggle from 'utils/toggle';
 // import 'static/sass/components/global.scss';
 
 const Header = () => {
   const [isActive, setIsActive] = useState('Home');
-  const [isSideBar, setIsSideBar] = useState(false);
+  const [isSideBar, setIsSideBar] = useToggle();
   const [show, setShow] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,10 +16,11 @@ const Header = () => {
     setIsActive(link);
   };
 
-  const handleSideBar = () => {
-    setIsSideBar(true);
-  };
+  // const handleSideBar = () => {
+  //   setIsSideBar(true);
+  // };
 
+  useEffect(() => console.log('UseEffect says:', isSideBar));
   return (
     <>
       <header className="pry-header">
@@ -35,11 +37,11 @@ const Header = () => {
         </div>
         <button
           type="button"
-          className={isSideBar === false ? 'mobile-nav-toggle' : 'open-mobile'}
+          className={isSideBar === false ? 'open-mobile' : 'mobile-nav-toggle'}
+          onClick={setIsSideBar}
           aria-controls="primary-navigation"
         >
           <span className="sr-mobile" aria-expanded="false" />
-          {/* </span> */}
         </button>
         <nav className="pry-header__nav">
           <ul id="pry-navigation" className="pry-navigation">
@@ -100,7 +102,7 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-      <Sidebar />
+      {isSideBar ? '' : <Sidebar check={isSideBar} />}
       {/* <div className="sidebar">
         <ul id="pry-navigation" className="pry-navigation">
           <li className={isActive === 'Home' ? 'active' : 'inactive'}>

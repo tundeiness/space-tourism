@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
-const SideBar = () => {
+const SideBar = ({ check }) => {
   const [isActive, setIsActive] = useState('Home');
   const [isSideBar, setIsSideBar] = useState(false);
   const [show, setShow] = useState(false);
@@ -16,6 +17,7 @@ const SideBar = () => {
   };
   return (
     <div className="sidebar">
+      {/* <div className={check ? 'close' : 'sidebar'}> */}
       {/* <div className="sidebar__btn-wrap">
         <button
           type="button"
