@@ -7,3 +7,16 @@
     overflow: hidden;
     height: 100vh;
 }
+
+@media screen and (max-width: 768px){
+
+    .home {
+    background-image: url(../../assets/image/home/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100%;
+    overflow: hidden;
+    height: 100vh;
+    }
+}
