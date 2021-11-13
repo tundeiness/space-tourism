@@ -15,6 +15,9 @@
     // transition: 0.3s ease-in-out;
     // transform: translateX(0);
     // transition: transform 5s ease-in-out;
+    background-color: #ffffff10;
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
 
     &__btn-wrap{
       outline: 1px solid red;
