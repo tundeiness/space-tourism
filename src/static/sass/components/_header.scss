@@ -142,6 +142,8 @@
     right: 20px;
     z-index: 99999;
     cursor: pointer;
+    border: none;
+    transition: background-image 0.3s ease-in-out;
   }
 
   .open-mobile{
@@ -157,6 +159,8 @@
     right: 20px;
     z-index: 99999;
     cursor: pointer;
+    border: none;
+    transition: background-image 0.3s ease-in-out;
   }
 
    &__img-section{

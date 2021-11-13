@@ -12,6 +12,9 @@
     color:#fff;
     //  width: clamp(15rem, 5vw, 4rem);
     width: min(65vw, 15rem);
+    // transition: 0.3s ease-in-out;
+    // transform: translateX(0);
+    // transition: transform 5s ease-in-out;
 
     &__btn-wrap{
       outline: 1px solid red;
@@ -67,11 +70,6 @@
 
 
     }
-  }
-
-
-  .close{
-    display: none;
   }
 
 
