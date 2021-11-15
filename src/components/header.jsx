@@ -4,10 +4,13 @@ import { Link } from 'react-router-dom';
 import Logo from 'static/assets/image/shared/logo.svg';
 import Sidebar from 'components/sideBar';
 import useToggle from 'utils/toggle';
+// import screenWidth from 'utils/viewPort';
 
 const Header = () => {
   const [isActive, setIsActive] = useState('Home');
   const [isSideBar, setIsSideBar] = useToggle();
+  // const { width } = screenWidth();
+  // const breakpoint = 420;
 
   const handleClick = (link) => {
     setIsActive(link);
@@ -29,7 +32,7 @@ const Header = () => {
         </div>
         <button
           type="button"
-          className={isSideBar === false ? 'open-mobile' : 'mobile-nav-toggle'}
+          className={isSideBar === false ? 'mobile-nav-toggle' : 'open-mobile'}
           onClick={setIsSideBar}
           aria-controls="primary-navigation"
         >
@@ -94,7 +97,8 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-      {isSideBar ? '' : <Sidebar />}
+      {/* {width > breakpoint && isSideBar ? <Sidebar /> : ''} */}
+      {isSideBar ? <Sidebar /> : ''}
     </>
   );
 };

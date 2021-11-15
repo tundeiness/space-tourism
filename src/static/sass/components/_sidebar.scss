@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width: 480px){
 
   .sidebar{
@@ -39,6 +41,7 @@
     &__side-nav{
       // outline: 1px solid green;
        margin-top: clamp(18vh, 50%, 20vh);
+       font-size: 16px;
       .side-active{
         //  outline: 1px solid blue;
          padding: 5px 0 5px 10px;
@@ -78,21 +81,17 @@
 
         .side-inactive:hover,
         .side-inactive:focus{
-           border-right: 3px solid rgb(255, 255, 255, 0.6);
-           transition: border-right 0.3s ease-in-out;
-         }
+          border-right: 3px solid rgb(255, 255, 255, 0.6);
+          transition: border-right 0.3s ease-in-out;
+        }
     }
   }
 
 
 }
 
-
-@media screen and (max-width: 1200px){
-
-  // .sidebar{
-  //   display: none;
-  // }
-
-
+@media screen and (min-width: 768px){
+  .sidebar{
+    display: none;
+  }
 }
