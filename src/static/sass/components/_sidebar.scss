@@ -13,7 +13,8 @@
     // outline: 1px solid blue;
     color:#fff;
     //  width: clamp(15rem, 5vw, 4rem);
-    width: min(65vw, 15rem);
+    // width: min(65vw, 15rem);
+    inset: 0 0 0 25%;
     // transition: 0.3s ease-in-out;
     // transform: translateX(0);
     // transition: transform 5s ease-in-out;
