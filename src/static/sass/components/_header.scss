@@ -82,25 +82,61 @@
 
   .pry-header{ 
 
-     &__nav{ 
+      &__img-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 12%;
+    .img-wrap{
+    // border: 1px solid red;
+    margin-top:0;
+    // width: 35px;
+    // height: 35px;
+    // border-radius: 50%;
+  }
 
+  }
+
+     &__nav{ 
+          margin-top: 0;
           .pry-navigation{ 
 
             margin-right:0;
             margin-left:0;
 
             li{
-       
-          a{
-            margin:0 1.1rem;
-            
-          }
-          }
+  
+              a{
+                margin:0;
+                span{
+                  display: none;
+                }
+              }
+            }
+
+            li:nth-child(1){
+              a{
+                margin-left: clamp(3rem, 2vw , 4rem);
+                margin-right: clamp(1rem, 2vw , 2rem);
+              }
+            }
+
+              li:nth-child(2){
+              a{
+                // margin-left: clamp(3rem, 2vw , 4rem);
+                margin-right: clamp(0.5rem, 2vw , 1rem);
+              }
+            }
+
+            li:nth-child(4){
+              a{
+                margin-right: clamp(3rem, 2vw , 4rem);
+                margin-left: clamp(1rem, 2vw , 2rem);
+              }
+            }
           }
      }
   }
-
-
 
 }
 
@@ -167,8 +203,7 @@
     &__nav{
       display: none;
     }
-    // position: relative;
-   
+
    .mobile-nav-toggle{
     display:block;
     background-image: url(../../assets/image/shared/icon-hamburger.svg);
@@ -213,79 +248,6 @@
   }
 }
 
-   &__nav{
-
-    .pry-navigation{
-      // display: flex;
-      // flex-direction: column;
-      // position: fixed;
-      // right:-193px;
-      // top:-45px;
-      // min-height: calc(100vh - 2px);
-      // width: min(65vw, 15rem);
-      // padding-top: 10rem;
-      // background-color: #ffffff10;
-      // backdrop-filter: blur( 12px );
-      // -webkit-backdrop-filter: blur( 12px );
-      // z-index: 100;
-      // outline: 1px solid red;
-      
-       li{
-        // display: flex;
-        // justify-content: start;
-        // outline: 1px solid blue;
-        // margin: 5px 0;
-
-          // a{
-          //   padding: 10px 15px;
-          //   text-decoration: none;
-          //   font-family: $ff-sans-cond;
-          //   text-transform: uppercase;
-          //   letter-spacing: 3px;
-          //   color:black ;
-          //   span{
-          //     color:black ;
-          //     font-weight: 700;
-          //   }
-          // }
-      }
-
-      // li.active{
-      //   border-right: 1px solid red;
-      //   border-bottom: none;
-      //   cursor: pointer;
-      // }
-
-      // li.active a,
-      // li.active a:hover,
-      // li.active a:focus,
-      // li.active a,
-      // li.inactive a:hover,
-      // li.active a:focus{
-      //   border-bottom: none;
-      //   cursor: pointer;
-      // }
-
-      li.inactive:hover,
-      li.inactive:focus{
-        // border-right: 1px solid rgb(255, 255, 255, 0.6);
-        // border-bottom: none;
-        // border-right: 1px solid black;
-        // cursor: pointer;
-      }
-
-
-
-    }
-   }
   }
 
 }
-
-
-
-// @media (min-width: 35em) and (max-width: 44.999em) {
-//     .primary-navigation a > span {
-//         display: none;
-//     }
-// }
