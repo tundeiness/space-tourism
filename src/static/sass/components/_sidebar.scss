@@ -12,9 +12,9 @@
     // z-index: 1000;
     // outline: 1px solid blue;
     color:#fff;
-    //  width: clamp(15rem, 5vw, 4rem);
+    width: clamp(15rem, 5vw, 16rem);
     // width: min(65vw, 15rem);
-    inset: 0 0 0 25%;
+    // inset: 0 0 0 10%;
     // transition: 0.3s ease-in-out;
     // transform: translateX(0);
     // transition: transform 5s ease-in-out;
@@ -23,20 +23,21 @@
     -webkit-backdrop-filter: blur( 12px );
 
     &__btn-wrap{
-      outline: 1px solid red;
-      display: flex;
-      justify-content: end;
+      // outline: 1px solid red;
+      // display: flex;
+      // justify-content: end;
+      
 
-      .mobile-nav-toggle{
-        width: 3rem;
-        height: 3rem;
-        background-image: url(../../assets/image/shared/icon-hamburger.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: transparent;
-        cursor: pointer;
-        margin: 1.5rem 1.5rem 1.5rem;
-      }
+      // .mobile-nav-toggle{
+      //   width: 3rem;
+      //   height: 3rem;
+      //   background-image: url(../../assets/image/shared/icon-hamburger.svg);
+      //   background-repeat: no-repeat;
+      //   background-position: center;
+      //   background-color: transparent;
+      //   cursor: pointer;
+      //   margin: 1.5rem 1.5rem 1.5rem;
+      // }
     }
 
     &__side-nav{
