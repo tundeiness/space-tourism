@@ -220,6 +220,11 @@
     transition: background-image 0.3s ease-in-out;
   }
 
+   .mobile-nav-toggle:focus{
+    outline: none;
+  }
+
+
   .open-mobile{
     display:block;
     background-image: url(../../assets/image/shared/icon-close.svg);
@@ -235,6 +240,10 @@
     cursor: pointer;
     border: none;
     transition: background-image 0.3s ease-in-out;
+  }
+
+   .open-mobile:focus{
+    outline: none;
   }
 
    &__img-section{
