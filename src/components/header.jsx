@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <>
       <header className="pry-header">
-        <div className="pry-header__img-section border-red">
+        <div className="pry-header__img-section">
           <picture className="img-wrap">
             <source srcSet={Logo} media="prefers-color-scheme: dark" />
             <img
