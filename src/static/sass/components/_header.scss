@@ -106,79 +106,25 @@ nav{
 
 @media (max-width: 1024px){
  .pry-header{
-  //  outline: 1px solid red;
-       &__img-section{
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // width: 12%;
-      .img-wrap{
-      // margin-top:0;
-      }
-
-  }
     &__img-section{
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
       width: 10%;
-    .img-wrap{
-    // border: 1px solid red;
-    // margin-top:0;
-    // width: 35px;
-    // height: 35px;
-    // border-radius: 50%;
-  }
-
-  }
-
+    }
       &__nav{ 
-          // margin-top: 0;
           .pry-navigation{ 
-
-            // margin-right:0;
-            // margin-left:0;
             margin-right: clamp(4.5rem, 2.5vw, 6rem);
             margin-left: clamp(2rem, 2.5vw, 5rem);
 
             li{
-  
               a{
-                
                 margin:0 0.8rem;
-                // span{
-                //   display: none;
-                // }
               }
-            }
-
-            // li:nth-child(1){
-            //   a{
-            //     margin-left: clamp(3rem, 2vw , 4rem);
-            //     margin-right: clamp(1rem, 2vw , 2rem);
-            //   }
-            // }
-
-              li:nth-child(2){
-                a{
-                  // margin-left: clamp(3rem, 2vw , 4rem);
-                  // margin-right: clamp(0.5rem, 2vw , 1rem);
-                }
-              }
-
-            li:nth-child(4){
-              // a{
-              //   margin-right: clamp(3rem, 2vw , 4rem);
-              //   margin-left: clamp(1rem, 2vw , 2rem);
-              // }
             }
           }
-     }
+    }
+  }
 
- }
 
-
- .pry-header::after{
+.pry-header::after{
   display: none;
   }
 
